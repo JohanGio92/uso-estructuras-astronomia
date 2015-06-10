@@ -1,2 +1,8 @@
-# uso-estructuras-astronomia
-Uso de Estructuras DinÃ¡micas de Datos: AstronomÃ­a - Algoritmos y ProgramaciÃ³n 2 - Fi - UBA
+Algoritmos y Programación 2 - FI UBA
+
+# Uso de Estructuras Dinámicas: Astronomía
+
+## Enunciado
+
+
+## Solución
