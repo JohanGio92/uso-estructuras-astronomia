@@ -53,6 +53,15 @@ class Estrella {
             return this->temperatura;
         }
 
+        /*
+         * post: indica si la estrella está más cerca que 'otraEstrella'
+         *       del Sol.
+         */
+        bool esMasCercanaQue(Estrella* otraEstrella) {
+
+            return this->distancia < otraEstrella->distancia;
+        }
+
 };
 
 #endif /* ESTRELLA_H_ */

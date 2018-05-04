@@ -10,8 +10,7 @@ Estrella* Astronomo::buscarEstrellaMasCercana(Lista<Estrella*>* estrellas) {
         Estrella* estrellaActual = estrellas->obtenerCursor();
 
         if ((estrellaMasCercana == NULL) ||
-            (estrellaActual->obtenerDistancia() <
-             estrellaMasCercana->obtenerDistancia())) {
+            estrellaActual->esMasCercanaQue(estrellaMasCercana)) {
 
             estrellaMasCercana = estrellaActual;
         }
