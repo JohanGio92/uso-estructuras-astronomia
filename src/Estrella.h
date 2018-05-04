@@ -62,6 +62,15 @@ class Estrella {
             return this->distancia < otraEstrella->distancia;
         }
 
+        /*
+         * post: indica si la temperatura de la estrella está en el rango
+         *       [desde, hasta].
+         */
+        bool tieneTemperaturaEntre(float desde, float hasta) {
+
+            return (this->temperatura >= desde) &&
+                   (this->temperatura <= hasta);
+        }
 };
 
 #endif /* ESTRELLA_H_ */

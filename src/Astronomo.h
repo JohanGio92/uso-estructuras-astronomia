@@ -16,6 +16,16 @@ class Astronomo {
          *       Si 'estrellas' está vacía, devuelve NULL.
          */
         Estrella* buscarEstrellaMasCercana(Lista<Estrella*>* estrellas);
+
+        /*
+         * post: agrega a la lista 'seleccionadas' aquellas Estrellas de
+         *       'estrellas' cuya temperatura está entre 'temperaturaDesde' y
+         *       'temperaturaHasta'.
+         */
+        void seleccionarEstrellasPorTemperatura(Lista<Estrella*>* estrellas,
+                                                float minima,
+                                                float maxima,
+                                                Lista<Estrella*>* seleccionadas);
 };
 
 #endif /* ASTRONOMO_H_ */

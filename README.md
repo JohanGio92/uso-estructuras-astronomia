@@ -38,8 +38,8 @@ class Astronomo {
  *       'temperaturaHasta'.
  */
 void seleccionarEstrellasPorTemperatura(Lista<Estrella*>* estrellas,
-                                        float temperaturaDesde,
-                                        float temperaturaHasta,
+                                        float minima,
+                                        float maxima,
                                         Lista<Estrella*>* seleccionadas);
 
 ```

@@ -19,7 +19,22 @@ Estrella* Astronomo::buscarEstrellaMasCercana(Lista<Estrella*>* estrellas) {
     return estrellaMasCercana;
 }
 
+void Astronomo::seleccionarEstrellasPorTemperatura(Lista<Estrella*>* estrellas,
+                                                   float minima,
+                                                   float maxima,
+                                                   Lista<Estrella*>* seleccionadas) {
 
+    estrellas->iniciarCursor();
+    while (estrellas->avanzarCursor()) {
+        Estrella* estrellaAnalizada = estrellas->obtenerCursor();
+
+        if (estrellaAnalizada->tieneTemperaturaEntre(minima, maxima)) {
+
+            seleccionadas->agregar(estrellaAnalizada);
+        }
+    }
+
+}
 
 
 
